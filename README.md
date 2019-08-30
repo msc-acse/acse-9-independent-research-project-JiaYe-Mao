@@ -19,7 +19,7 @@ To download the repository to your local machine.
 Installing all packages below.
 ```bash
    pip install numpy
-   pip install sklearn 
+   pip install sklearn
    pip install keras
    pip install tensorflow
    pip install matplotlib
@@ -52,10 +52,10 @@ Save the file and run the following code to get the interpolated matrix in the d
 python ../../opal.py fpc.opal
 ```
 
-Because some problem exist in Linux version Keras (Loss in training will explode after a certain steps), the training have to be done in other OS. We have only tested it on MacOS. Copy the interpolated_matrix files into same directory with ae_training.py on a MacOS computer and run the scipt
+Because some problem exist in Linux version Keras (Loss in training will explode after a certain steps), the training have to be done in other OS. We have only tested it on MacOS. Copy the interpolated_matrix files into same directory with ae_training.py on a MacOS computer and run the scipt.
 
 ```
-python ae_training.py  (on MacOS)
+python dd_training_ae_general.py  (on MacOS)
 ```
 
 This step will give you two models, 'encoder_dd.h5' and 'decoder_dd.h5'.
@@ -86,10 +86,10 @@ paraview
  - tensorflow >= 1.14.0   
  - vtk >= 8.1.2
 ## Repository Information
-* __Opal_master__		- contains Opal (which is the major software I developed) 
+* __Opal_master__		- contains Opal (which is the major software I developed)
 * __multifluids_icferst-master__     - IC-Ferst (support to run the Opal)
-* __report__		- contains the final report, detailing this project's motivations, software design, analysis, and conclusions 
-* __results__		- some pre-runed results for Opal, including the results for domain=1,2,4, and sampling methods 1 and 2. 
+* __report__		- contains the final report, detailing this project's motivations, software design, analysis, and conclusions
+* __results__		- some pre-runed results for Opal, including the results for domain=1,2,4, and sampling methods 1 and 2.
 
 ## Author and Course Information
 __Author:__ Jiaye Mao
@@ -97,7 +97,7 @@ __Github:__ Jiaye Mao
 __CID:__ 01536315
 
 This project is completed for Imperial College's MSc in Applied Computational Science and Engineering program,
-as part of the final course module ACSE9. This project was completed under the supervision of Professor Christopher Pain. 
+as part of the final course module ACSE9. This project was completed under the supervision of Professor Christopher Pain.
 
 ## License  
 Licensed under the MIT [license](https://github.com/msc-acse/acse-9-independent-research-project-Wade003/blob/master/LICENSE)
