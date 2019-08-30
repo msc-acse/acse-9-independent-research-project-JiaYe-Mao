@@ -362,7 +362,7 @@ def interpolation_back_to_unstructured_mesh(point, msh, dx, dy, start_x, start_y
 def predict_dd(nLatent, file_prefix_snapshots, generate_directory, structured_shape, encoded):
     filename = file_prefix_snapshots+str(0)+".vtu"
     coords = get_node_coords_from_vtk(filename)
-    model_name = generate_directory+"/decoder_dd" + str(len(structured_shape)) + ".h5"
+    model_name = generate_directory+"/decoder_dd.h5"
     ae = Autoencoder_interpolation(nLatent, img_rows=[structured_shape[i][1] for i in range(len(structured_shape))], img_cols=[structured_shape[i][0] for i in range(len(structured_shape))], ndomain=len(structured_shape))
     ae.decoder_model.load_weights(model_name, by_name=True)
     decoder = ae.decoder_model

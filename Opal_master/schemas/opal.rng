@@ -820,7 +820,7 @@ less accurate</a:documentation>
                     <ref name="integer"/>
                   </element>
                   <element name="nsplt">
-                    <a:documentation>determine how many domains to decompse (ndomain=2**nsplt)
+                    <a:documentation>determine how many domains to decompse (ndomain=2**nsplt) (-1 < nsplt < 3)
                     </a:documentation>
                     <ref name="integer"/>
                   </element>

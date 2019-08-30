@@ -283,7 +283,7 @@ def compress_snapshots_real_dd(interpolate_method, file_prefix, nLatent, dim, ep
 
     encoder=None
     try:
-        encoder = load_model(directory+"/encoder_dd" + str(2**nsplt) + ".h5")
+        encoder = load_model(directory+"/encoder_dd.h5")
     except IOError:
 
         # Todo : the bug in Linux dddfd
@@ -309,55 +309,6 @@ def compress_snapshots_real_dd(interpolate_method, file_prefix, nLatent, dim, ep
     print(encoded.shape)
     return nirom_options, encoded, structured_shape, min_all, max_all, witchd
 
-
-def compress_snapshots_dd(fwd_options, nirom_options):
-    t = 0
-    nPOD_total = 0
-    encoder = load_model('encoder_dd.h5')
-
-    data_left = None
-    data_right = None
-
-    try:
-        data_left = np.load('interpolated_matrix_left.npy')
-        data_right = np.load('interpolated_matrix_right.npy')
-    except IOError:
-        generate_all_matrix_dd(range_vtu=2000, start_index=0, file_prefix="snapshots/Flowpast_2d_Re3900_")
-        data_left = np.load('interpolated_matrix_left.npy')
-        data_right = np.load('interpolated_matrix_right.npy')
-
-    data_a_left = []
-    data_a_right = []
-    for i in range(0, data_left.shape[0], 20):
-        data_a_left.append(data_left[i])
-        data_a_right.append(data_right[i])
-    data_left = np.array(data_a_left)
-    data_right = np.array(data_a_right)
-    print("data", data_left.shape)
-    encoded = encoder.predict([data_left, data_right])
-    print(encoded.shape)
-    return nirom_options, encoded
-
-def compress_snapshots_autoencoder(fwd_options, nirom_options):
-    t = 0
-    nPOD_total = 0
-    encoder = load_model('encoder.h5')
-
-    data = None
-    try:
-        data = np.load('interpolated_matrix.npy')
-    except IOError:
-        data = generate_all_matrix(range_vtu=2000, start_index=0, file_prefix="snapshots/Flowpast_2d_Re3900_")
-        np.save('interpolated_matrix.npy', data)
-    # Todo : delete This
-    data_a = []
-    for i in range(0, data.shape[0], 20):
-        data_a.append(data[i])
-    data = np.array(data_a)
-    print("data", data.shape)
-    encoded = encoder.predict(data)
-    print(encoded.shape)
-    return nirom_options, encoded
 
 def compress_snapshots(fwd_options, nirom_options):
 
