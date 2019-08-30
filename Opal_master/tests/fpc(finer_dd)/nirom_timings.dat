@@ -1,0 +1,51 @@
+nirom timings (in seconds), recorded  on 18-08-2019 17:44:50
+reading in snapshots took: 29.4237
+compression (eigh) took:   2
+training the NN took:      378.45
+nirom timings (in seconds), recorded  on 22-08-2019 15:43:46
+compression (eigh) took:   2
+nirom timings (in seconds), recorded  on 22-08-2019 16:18:22
+compression (eigh) took:   2
+training the NN took:      1092.12
+nirom timings (in seconds), recorded  on 22-08-2019 16:42:23
+compression (eigh) took:   2
+training the NN took:      2626.05
+nirom timings (in seconds), recorded  on 22-08-2019 16:42:31
+compression (eigh) took:   2
+training the NN took:      2624.1
+nirom timings (in seconds), recorded  on 22-08-2019 20:15:22
+compression (eigh) took:   2
+training the NN took:      183.648
+nirom timings (in seconds), recorded  on 23-08-2019 03:53:00
+compression (eigh) took:   2
+training the NN took:      855.639
+nirom timings (in seconds), recorded  on 23-08-2019 05:36:36
+compression (eigh) took:   2
+training the NN took:      1065.66
+nirom timings (in seconds), recorded  on 23-08-2019 05:39:50
+compression (eigh) took:   2
+training the NN took:      974.356
+nirom timings (in seconds), recorded  on 23-08-2019 15:12:40
+compression (eigh) took:   2
+training the NN took:      618.47
+nirom timings (in seconds), recorded  on 23-08-2019 15:39:52
+compression (eigh) took:   2
+training the NN took:      393.501
+nirom timings (in seconds), recorded  on 23-08-2019 18:44:51
+compression (eigh) took:   2
+training the NN took:      725.484
+nirom timings (in seconds), recorded  on 23-08-2019 19:28:44
+compression (eigh) took:   2
+training the NN took:      757.004
+nirom timings (in seconds), recorded  on 25-08-2019 22:42:49
+compression (eigh) took:   2
+training the NN took:      296.219
+nirom timings (in seconds), recorded  on 25-08-2019 23:03:44
+compression (eigh) took:   2
+training the NN took:      555.523
+nirom timings (in seconds), recorded  on 25-08-2019 23:16:25
+compression (eigh) took:   2
+training the NN took:      589.824
+nirom timings (in seconds), recorded  on 26-08-2019 02:06:42
+compression (eigh) took:   2
+training the NN took:      327.543
