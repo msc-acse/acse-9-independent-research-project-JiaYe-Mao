@@ -103,7 +103,7 @@ def nirom(fwd_options,nirom_options):
         nLatent=nirom_options.compression.nLatent
         # file_prefix = "/data/LSBU_results/LSBUv2_"
         file_prefix = fwd_options.path_to_results + "/" + nirom_options.compression.file_prefix
-        interpolate_method = 1
+        interpolate_method = nirom_options.compression.method
 
         print("nsplt", nsplt)
         print("generate_directory", generate_directory)

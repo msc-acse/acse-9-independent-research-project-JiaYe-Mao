@@ -179,6 +179,7 @@ class Compression():
         self.dim=None
         self.file_prefix=None
         self.number_epochs=None
+        self.method=None
 
 
     def write_sing_values(self):
@@ -459,9 +460,9 @@ def read_in_nirom_options(path, opal_options, nirom_options, fwd_options):
             nirom_options.compression.number_epochs =number_epochs
             nLatent = libspud.get_option('/opal_operation/nirom/compression/plain_autoencoder/field_name[0]/number_latent_vector')
             nirom_options.compression.nLatent=nLatent
-            batch_size = libspud.get_option('/opal_operation/nirom/compression/plain_autoencoder/field_name[0]/batch_size')
-            nirom_options.compression.batch_size=batch_size
 
+            method = libspud.get_option('/opal_operation/nirom/compression/plain_autoencoder/field_name[0]/method')
+            nirom_options.compression.method=method
 
 
 

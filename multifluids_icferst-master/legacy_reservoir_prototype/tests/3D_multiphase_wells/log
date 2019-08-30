@@ -1,0 +1,4 @@
+ MESSAGE: Using default options for the linear solver: GMRES(30) + HYPRE
+Running the model
+Compare production with stored value: 0.00565078113781
+Well production works OK
