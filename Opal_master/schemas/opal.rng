@@ -820,7 +820,7 @@ less accurate</a:documentation>
                     <ref name="integer"/>
                   </element>
                   <element name="nsplt">
-                    <a:documentation>determine how many domains to decompse (ndomain=2**nsplt) (-1 < nsplt < 3)
+                    <a:documentation>determine how many domains to decompse (ndomain=2**nsplt)
                     </a:documentation>
                     <ref name="integer"/>
                   </element>
@@ -844,13 +844,6 @@ less accurate</a:documentation>
                       <data type="string"/>
                     </attribute>
                   </element>
-                  <element name="method">
-                    <a:documentation>determine the method used in transfomation
-                      0 : balance the area length
-                      1 : balance the area density
-                    </a:documentation>
-                    <ref name="integer"/>
-                  </element>
                   <element name="number_epochs">
                     <a:documentation>Similar to iteration number   </a:documentation>
                     <ref name="integer"/>
@@ -859,7 +852,7 @@ less accurate</a:documentation>
                     <a:documentation>latent vectors to compress to   </a:documentation>
                     <ref name="integer"/>
                   </element>
-
+                  
                 </element>
               </oneOrMore>
             </element>

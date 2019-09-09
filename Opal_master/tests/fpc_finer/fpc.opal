@@ -24,9 +24,6 @@
               <integer_value rank="0">2</integer_value>
             </dim>
             <file_prefix name="Flowpast_2d_Re3900_"/>
-            <method>
-              <integer_value rank="0">1</integer_value>
-            </method>
             <number_epochs>
               <integer_value rank="0">1000</integer_value>
             </number_epochs>
